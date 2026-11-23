@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) exit;
 
 const AICC_GA4 = 'G-NZ6K68ESJ7';
 const AICC_META_PIXEL = '2259088834653196';
-const AICC_LINKEDIN_PARTNER = ''; // set when the LinkedIn Insight Tag is created
+const AICC_LINKEDIN_PARTNER = '10450236';
 
 add_action('wp_head', function () {
     if (is_user_logged_in()) return;
