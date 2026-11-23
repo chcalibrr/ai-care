@@ -15,6 +15,7 @@ $ph = function ($n) { return get_theme_file_uri('assets/img/photos/' . $n . '.we
       <div class="hero-note">
         <span><?php echo aicc_icon('check'); ?>Supports 500+ clinics and EHRs</span>
                 <span><?php echo aicc_icon('check'); ?>No new staff</span>
+                <span><?php echo aicc_icon('check'); ?>HIPAA compliant</span>
         <span><?php echo aicc_icon('check'); ?>Your clinicians stay in charge</span>
               </div>
     </div>
@@ -119,27 +120,25 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
     </div>
     <div class="os reveal" data-os>
       <div class="os-head">
-        <h3>Your team sees all of it in one place</h3>
-        <p>Patients by APCM level, every call, every escalation and the monthly billing report. Sample screens, made-up patients.</p>
+        <h3>One report at the end of every month</h3>
+        <p>Which patients meet every APCM requirement, by code, and what is blocking the rest. Your biller submits the claims. Sample data.</p>
       </div>
-      <div class="os-tabs" role="tablist">
-        <?php foreach ([
-          ['patients', 'Patients', 'Every eligible patient, sorted into G0556, G0557 or G0558, with where they are and the next call.'],
-          ['escalations', 'Escalations, 24/7', 'Red flags reach your on-call clinician by your triage rules, day or night.'],
-          ['patient', 'The record behind each claim', 'Consent recording, every call with its date and length, and the care plan, written to your EHR.'],
-          ['report', 'Monthly billing report', 'Who meets every APCM requirement by code, and what is blocking the rest.'],
-        ] as $i => $t): ?>
-        <button class="os-tab" type="button" role="tab" aria-selected="<?php echo $i ? 'false' : 'true'; ?>" data-ostab="<?php echo $i; ?>"><i class="os-meter"></i><strong><?php echo esc_html($t[1]); ?></strong><span><?php echo esc_html($t[2]); ?></span></button>
-        <?php endforeach; ?>
-      </div>
-      <div class="os-win">
-        <div class="os-chrome" aria-hidden="true"><i></i><i></i><i></i><span>AI Care Coordinator · Cedar Family Medicine</span></div>
-        <div class="os-view">
-          <?php foreach (['patients' => 'Patient list sorted by APCM level', 'escalations' => 'Escalations queue with triage rules', 'patient' => 'Patient record with consent and call history', 'report' => 'Monthly APCM billing report'] as $k => $alt): ?>
-          <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/app/' . $k . '.webp?v=' . AICC_VER); ?>" alt="<?php echo esc_attr($alt); ?>" width="2160" height="1350" loading="lazy" data-osimg<?php echo $k === 'patients' ? ' class="on"' : ''; ?>>
-          <?php endforeach; ?>
+      <div class="os-win rep">
+        <div class="os-chrome" aria-hidden="true"><i></i><i></i><i></i><span>Billing report · November</span></div>
+        <div class="rep-b">
+          <div class="rep-stats">
+            <div><small>Enrolled</small><b data-count="171">0</b><em>Consent on file</em></div>
+            <div><small>Billable this month</small><b data-count="158">0</b><em>G0556 41 · G0557 96 · G0558 21</em></div>
+            <div class="hl"><small>Expected this month</small><b data-count="8296" data-prefix="$">$0</b><em>At 2026 national rates</em></div>
+            <div><small>To fix before month end</small><b data-count="13">0</b><em>We are working on all of them</em></div>
+          </div>
+          <div class="rep-t">
+            <div class="rr th"><span>Patient</span><span>Code</span><span>Consent</span><span>Status</span></div>
+            <div class="rr" data-rr><span class="rn">Robert C.</span><span class="rc">G0557</span><span class="rk">&#10003;</span><span class="rs ok" data-final="Billable">Checking</span></div><div class="rr" data-rr><span class="rn">Dolores R.</span><span class="rc">G0558</span><span class="rk">&#10003;</span><span class="rs ok" data-final="Billable">Checking</span></div><div class="rr" data-rr><span class="rn">Margaret E.</span><span class="rc">G0557</span><span class="rk">&#10003;</span><span class="rs wait" data-final="Care plan waiting for Dr. Lin">Checking</span></div><div class="rr" data-rr><span class="rn">Peter N.</span><span class="rc">G0557</span><span class="rk">&#10003;</span><span class="rs ok" data-final="Billable">Checking</span></div><div class="rr" data-rr><span class="rn">James W.</span><span class="rc">G0556</span><span class="rk">&#10003;</span><span class="rs ok" data-final="Billable">Checking</span></div><div class="rr" data-rr><span class="rn">Carol J.</span><span class="rc">G0556</span><span class="rk">&#10003;</span><span class="rs wait" data-final="Not reached yet, calling Wed">Checking</span></div>
+          </div>
         </div>
       </div>
+      <p class="trust"><span>HIPAA compliant</span><span>SOC 2 Type II</span><span>BAA signed before go-live</span><span>Encrypted in transit and at rest</span></p>
     </div>
   </div>
 </section>

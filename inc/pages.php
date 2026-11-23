@@ -112,9 +112,9 @@ function aicc_pages() {
             'title' => 'Security',
             'h1' => 'Security and compliance',
             'seo_title' => 'Security, HIPAA and Compliance | AI Care Coordinator',
-            'desc' => 'How the AI care coordinator protects patient data: SOC 2 Type II audited controls, a signed BAA before go-live, encryption and clinician-controlled escalation.',
+            'desc' => 'How the AI care coordinator protects patient data: HIPAA compliant, SOC 2 Type II audited controls, a signed BAA before go-live, encryption and clinician-controlled escalation.',
             'label' => 'Security',
-            'answer' => 'Our controls are SOC 2 Type II audited, every practice signs a Business Associate Agreement with us before any patient data is shared, and your clinicians decide how and when the coordinator escalates.',
+            'answer' => 'We are HIPAA compliant and our controls are SOC 2 Type II audited. Every practice signs a Business Associate Agreement with us before any patient data is shared, and your clinicians decide how and when the coordinator escalates.',
             'order' => 100,
         ],
         'book-a-demo' => [
