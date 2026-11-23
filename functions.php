@@ -13,6 +13,7 @@ require_once get_template_directory() . '/inc/seo.php';
 require_once get_template_directory() . '/inc/forms.php';
 require_once get_template_directory() . '/inc/shortcodes.php';
 require_once get_template_directory() . '/inc/setup.php';
+require_once get_template_directory() . '/inc/tracking.php';
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');

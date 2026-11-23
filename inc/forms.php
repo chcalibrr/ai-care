@@ -40,7 +40,7 @@ function aicc_demo_form_html() {
         <div><label for="f-state">State</label><input id="f-state" name="state" autocomplete="address-level1"></div>
       </div>
       <div class="two">
-        <div><label for="f-panel">Medicare patients (approx.)</label>
+        <div><label for="f-panel">Medicare patients</label>
           <select id="f-panel" name="panel"><option>Under 250</option><option>250 to 500</option><option>500 to 1,000</option><option>1,000 to 3,000</option><option>3,000+</option></select></div>
         <div><label for="f-program">Most interested in</label>
           <select id="f-program" name="program"><option>APCM</option><option>CCM</option><option>TCM</option><option>RPM</option><option>Referral follow-up</option><option>Not sure yet</option></select></div>
