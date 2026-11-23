@@ -1,12 +1,15 @@
 # aicarecoordinator.com theme
 
-WordPress theme for aicarecoordinator.com (folder name on the server: `wp-content/themes/aicc`).
+WordPress theme for aicarecoordinator.com (folder name on the server: `wp-content/themes/ai-care`, installed from this repo by Git Updater).
 
 ## How changes go live
 
 1. Edit files here and bump `Version:` in `style.css`.
 2. Push to `main`.
-3. The Git Updater plugin on the site picks up the new version and updates the theme.
+3. Call the Git Updater webhook to install it right away (otherwise Git Updater picks it up on its next check):
+   `https://aicarecoordinator.com/wp-json/git-updater/v1/update/?key=KEY&theme=ai-care&branch=main&override=1`
+   The key is in Settings > Git Updater > Remote Management. Never commit it; this repo is public.
+4. Purge the SiteGround cache (admin bar > Purge SG Cache).
 
 `AICC_VER` in `functions.php` reads the version from `style.css`. A new version re-runs the page installer (`inc/setup.php`), which refreshes page content from `content/*.html` unless a page was edited in WordPress.
 
