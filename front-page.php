@@ -6,8 +6,8 @@ $ph = function ($n) { return get_theme_file_uri('assets/img/photos/' . $n . '.we
   <div class="fl-ribs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="wrap hero-grid">
     <div class="reveal">
-      <h1>More care for your patients. More revenue for your practice.</h1>
-      <p class="lead">Medicare pays your practice every month to look after patients between visits. We make every call, so each patient gets checked on and you get paid, without adding staff.</p>
+      <h1>Get paid for the care between visits</h1>
+      <p class="lead">Medicare pays your practice every month for each patient you look after between visits. We make every call, so you collect that money for your whole panel without adding staff.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="<?php echo esc_url($demo); ?>">Book a demo</a>
         <a class="btn btn-text" href="#listen"><span class="dot"><?php echo aicc_icon('play'); ?></span>Hear an enrollment call</a>
@@ -47,9 +47,9 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
 <section class="mission">
   <div class="wrap mission-grid">
     <div class="reveal">
-      <h2>Almost every Medicare patient you see qualifies. Almost none of them get it.</h2>
-      <p class="lead">Medicare pays for monthly care for any patient whose primary care you provide. The care doesn't happen because nobody has time to call. We call every patient, every month, in their language, and your team only hears about the ones who need a clinician.</p>
-      <div class="face-sum"><b>337</b><span>patients checked on this month in an example practice, all billable, with no new hires</span></div>
+      <h2>Most of your Medicare patients qualify. You're not getting paid for them.</h2>
+      <p class="lead">Medicare pays your practice $16 to $117 a month for each patient whose primary care you provide. In most practices that money is never collected, because nobody has time to call every patient every month. We do the calls, so you get paid for all of them, and your team only hears about the patients who need a clinician.</p>
+      <div class="face-sum"><b>$16,600</b><span>billed this month by an example practice from 337 patients it wasn't getting paid for before, with no new hires</span></div>
     </div>
     <div class="faces reveal" data-faces>
       <?php foreach ([['p-james', 'James R.', 'BP log reviewed'], ['p-margaret', 'Margaret H.', 'Refill requested'], ['p-rosa', 'Rosa M.', 'Check-in in Spanish'], ['p-henry', 'Henry L.', 'Wellness visit booked']] as $f): ?>
@@ -62,7 +62,7 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
 <section>
   <div class="wrap">
     <div class="section-head reveal">
-      <h2>Most of your patients never get this care</h2>
+      <h2>Why that money goes uncollected</h2>
       <p class="lead">Not because they don't qualify. Someone has to call every patient, every month, write it up, and do it again next month. Practices that try it with the staff they have run out of hours.</p>
     </div>
     <div class="stats reveal">

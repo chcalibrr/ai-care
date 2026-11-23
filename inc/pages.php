@@ -23,7 +23,7 @@ function aicc_pages() {
     return [
         'home' => [
             'title' => 'Home',
-            'seo_title' => 'More Care, More Revenue: Automated Medicare Care Management (APCM)',
+            'seo_title' => 'Get Paid for the Care Between Visits | Automated APCM for Primary Care',
             'desc' => 'Medicare pays your practice every month to care for patients between visits (APCM). We make every enrollment and check-in call, so patients get cared for and you get paid, with no new staff.',
             'order' => 0,
         ],
