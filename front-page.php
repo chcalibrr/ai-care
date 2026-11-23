@@ -59,7 +59,7 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
   </div>
 </section>
 
-<section>
+<section class="pain">
   <div class="wrap">
     <div class="section-head reveal">
       <h2>Why that money goes uncollected</h2>
@@ -72,7 +72,6 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
       <div class="stat"><b>1.2%</b><p>of traditional Medicare patients got this care through APCM in its first year, even though almost all of them qualify.</p><small>Source: <a href="https://www.medicaleconomics.com/view/first-look-at-apcm-data-growth-modest-reach-physician-turnover-for-medicares-primary-care-bundle" rel="nofollow noopener" target="_blank">Medical Economics</a></small></div>
     </div>
     <p class="stats-close reveal">Hiring more people doesn't fix it. Taking the calls off your team does, and you can be live in weeks.</p>
-    </div>
   </div>
 </section>
 
