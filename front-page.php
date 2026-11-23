@@ -47,9 +47,9 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
 <section class="mission">
   <div class="wrap mission-grid">
     <div class="reveal">
-      <h2>The revenue is already on your panel.</h2>
-      <p class="lead">Most Medicare patients in a primary care practice qualify for APCM. What's missing is someone to enroll them and stay in touch every month. That's the part we take over, for every patient, in their language.</p>
-      <div class="face-sum"><b>337</b><span>patients ready to bill for APCM this month in an example practice, with no new hires</span></div>
+      <h2>Almost every Medicare patient you see qualifies. Almost none of them get it.</h2>
+      <p class="lead">Medicare pays for monthly care for any patient whose primary care you provide. The care doesn't happen because nobody has time to call. We call every patient, every month, in their language, and your team only hears about the ones who need a clinician.</p>
+      <div class="face-sum"><b>337</b><span>patients checked on this month in an example practice, all billable, with no new hires</span></div>
     </div>
     <div class="faces reveal" data-faces>
       <?php foreach ([['p-james', 'James R.', 'BP log reviewed'], ['p-margaret', 'Margaret H.', 'Refill requested'], ['p-rosa', 'Rosa M.', 'Check-in in Spanish'], ['p-henry', 'Henry L.', 'Wellness visit booked']] as $f): ?>
@@ -62,14 +62,16 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
 <section>
   <div class="wrap">
     <div class="section-head reveal">
-      <h2>Medicare already pays for this. Almost nobody bills it.</h2>
-      <p class="lead">APCM pays primary care practices every month for managing a patient's care between visits, with no minutes to count. The only thing in the way has been staff time to make the calls.</p>
+      <h2>Most of your patients never get this care</h2>
+      <p class="lead">Not because they don't qualify. Someone has to call every patient, every month, write it up, and do it again next month. Practices that try it with the staff they have run out of hours.</p>
     </div>
     <div class="stats reveal">
-      <div class="stat"><b>1.2%</b><p>of Medicare fee-for-service patients received APCM services in the last quarter of 2025, the program's first year.</p><small>Source: <a href="https://www.medicaleconomics.com/view/first-look-at-apcm-data-growth-modest-reach-physician-turnover-for-medicares-primary-care-bundle" rel="nofollow noopener" target="_blank">Medical Economics</a></small></div>
-      <div class="stat"><b>43.6%</b><p>of clinicians surveyed were not billing APCM and had never heard of the codes.</p><small>Source: <a href="https://www.medicaleconomics.com/view/first-look-at-apcm-data-growth-modest-reach-physician-turnover-for-medicares-primary-care-bundle" rel="nofollow noopener" target="_blank">Medical Economics</a></small></div>
-      <div class="stat"><b>~$50</b><p>a month per patient for G0557, the level used for about 80% of APCM claims.</p><small>Source: <a href="https://aafp.org/content/dam/AAFP/documents/advocacy/payment/medicare/ES-2025MPFSFinalRule-112124.pdf" rel="nofollow noopener" target="_blank">AAFP</a>, 2025 national average</small></div>
-      <div class="stat"><b>0 min</b><p>monthly time requirement. APCM is billed once per patient per month when the requirements are met.</p><small>Source: <a href="https://www.cms.gov/medicare/payment/fee-schedules/physician-fee-schedule/advanced-primary-care-management-services" rel="nofollow noopener" target="_blank">CMS</a></small></div>
+      <div class="stat"><b>96%</b><p>of Medicare patients who qualify for monthly care management never get it. That number has barely moved in years.</p><small>Source: <a href="https://kffhealthnews.org/aging/medicare-chronic-care-management-monitoring-business/" rel="nofollow noopener" target="_blank">KFF Health News</a>, Mathematica analysis</small></div>
+      <div class="stat"><b>61%</b><p>of healthcare leaders say not having enough staff is the main thing stopping them from managing chronic care.</p><small>Source: <a href="https://www.managedhealthcareexecutive.com/view/why-chronic-care-management-isnt-gaining-traction-health-execs-identify-3-barriers" rel="nofollow noopener" target="_blank">Managed Healthcare Executive</a></small></div>
+      <div class="stat"><b>200 hrs</b><p>a month to call 800 patients once each, with retries and notes. That is more than one full-time person, every month, just for routine calls.</p><small>Our estimate, about 15 minutes per patient</small></div>
+      <div class="stat"><b>1.2%</b><p>of traditional Medicare patients got this care through APCM in its first year, even though almost all of them qualify.</p><small>Source: <a href="https://www.medicaleconomics.com/view/first-look-at-apcm-data-growth-modest-reach-physician-turnover-for-medicares-primary-care-bundle" rel="nofollow noopener" target="_blank">Medical Economics</a></small></div>
+    </div>
+    <p class="stats-close reveal">Hiring more people doesn't fix it. Taking the calls off your team does, and you can be live in weeks.</p>
     </div>
   </div>
 </section>
