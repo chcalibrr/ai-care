@@ -210,3 +210,16 @@ add_action('template_redirect', function () {
     }
     exit;
 }, 0); // before WordPress's canonical redirect adds a trailing slash
+
+// Site verification files served from the site root (Search Console, Bing).
+add_action('init', function () {
+    $files = [
+        '/googleb9a2f0917acb68d2.html' => ['text/html', 'google-site-verification: googleb9a2f0917acb68d2.html'],
+    ];
+    $path = strtok($_SERVER['REQUEST_URI'] ?? '', '?');
+    if (isset($files[$path])) {
+        header('Content-Type: ' . $files[$path][0] . '; charset=utf-8');
+        echo $files[$path][1];
+        exit;
+    }
+}, 0);
