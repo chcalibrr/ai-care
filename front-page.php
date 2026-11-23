@@ -117,6 +117,30 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
           </div></div></div>
       </div>
     </div>
+    <div class="os reveal" data-os>
+      <div class="os-head">
+        <h3>Your team sees all of it in one place</h3>
+        <p>Patients by APCM level, every call, every escalation and the monthly billing report. Sample screens, made-up patients.</p>
+      </div>
+      <div class="os-tabs" role="tablist">
+        <?php foreach ([
+          ['patients', 'Patients', 'Every eligible patient, sorted into G0556, G0557 or G0558, with where they are and the next call.'],
+          ['escalations', 'Escalations, 24/7', 'Red flags reach your on-call clinician by your triage rules, day or night.'],
+          ['patient', 'The record behind each claim', 'Consent recording, every call with its date and length, and the care plan, written to your EHR.'],
+          ['report', 'Monthly billing report', 'Who meets every APCM requirement by code, and what is blocking the rest.'],
+        ] as $i => $t): ?>
+        <button class="os-tab" type="button" role="tab" aria-selected="<?php echo $i ? 'false' : 'true'; ?>" data-ostab="<?php echo $i; ?>"><i class="os-meter"></i><strong><?php echo esc_html($t[1]); ?></strong><span><?php echo esc_html($t[2]); ?></span></button>
+        <?php endforeach; ?>
+      </div>
+      <div class="os-win">
+        <div class="os-chrome" aria-hidden="true"><i></i><i></i><i></i><span>AI Care Coordinator · Cedar Family Medicine</span></div>
+        <div class="os-view">
+          <?php foreach (['patients' => 'Patient list sorted by APCM level', 'escalations' => 'Escalations queue with triage rules', 'patient' => 'Patient record with consent and call history', 'report' => 'Monthly APCM billing report'] as $k => $alt): ?>
+          <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/app/' . $k . '.webp?v=' . AICC_VER); ?>" alt="<?php echo esc_attr($alt); ?>" width="2160" height="1350" loading="lazy" data-osimg<?php echo $k === 'patients' ? ' class="on"' : ''; ?>>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -134,14 +158,14 @@ foreach (array_merge($e, $e) as $x) echo '<img src="' . esc_url(get_theme_file_u
   <div class="wrap">
     <div class="section-head reveal">
       <h2>What happens on the calls</h2>
-      <p class="lead">Every call follows your practice's protocols. A few situations from a normal month.</p>
+      <p class="lead">Each call covers part of what APCM requires: monthly care management, 24/7 access, follow-up after a hospital or ER visit, and consent. A few from a normal month, following your practice's protocols.</p>
     </div>
     <div class="scen reveal" data-scen>
       <div class="stabs" role="tablist">
-        <button class="stab" role="tab" aria-selected="true" data-stab="0"><i class="meter"></i><strong>Red flag escalation</strong><span>Chest pain reported on a check-in</span></button>
-        <button class="stab" role="tab" aria-selected="false" data-stab="1"><i class="meter"></i><strong>After an ER visit</strong><span>Care plan updated, follow-up booked</span></button>
-        <button class="stab" role="tab" aria-selected="false" data-stab="2"><i class="meter"></i><strong>Spanish-language check-in</strong><span>Same program, patient's language</span></button>
-        <button class="stab" role="tab" aria-selected="false" data-stab="3"><i class="meter"></i><strong>Patient says not now</strong><span>Recorded, nothing billed</span></button>
+        <button class="stab" role="tab" aria-selected="true" data-stab="0"><i class="meter"></i><strong>Red flag escalation</strong><span>Chest pain reported on a check-in</span><em class="apcm-el">APCM · 24/7 access</em></button>
+        <button class="stab" role="tab" aria-selected="false" data-stab="1"><i class="meter"></i><strong>After an ER visit</strong><span>Care plan updated, follow-up booked</span><em class="apcm-el">APCM · Care transitions</em></button>
+        <button class="stab" role="tab" aria-selected="false" data-stab="2"><i class="meter"></i><strong>Spanish-language check-in</strong><span>Same program, patient's language</span><em class="apcm-el">APCM · Monthly care management</em></button>
+        <button class="stab" role="tab" aria-selected="false" data-stab="3"><i class="meter"></i><strong>Patient says not now</strong><span>Recorded, nothing billed</span><em class="apcm-el">APCM · Consent</em></button>
       </div>
       <div class="sframe fluted deep">
         <div class="fl-ribs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
